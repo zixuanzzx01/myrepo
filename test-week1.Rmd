@@ -1,0 +1,11 @@
+---
+title: "test-week1"
+output: html_document
+---
+
+This is a test file. 
+```{r}
+# here are the code.
+1 + 1
+```
+
