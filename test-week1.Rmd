@@ -2,10 +2,46 @@
 title: "test-week1"
 output: html_document
 ---
+# Base Operations
+Create objects and assign values.
 
-This is a test file. 
+```{r}
+x <- 2
+```
+
+Remove objects.
+
+```{r}
+rm(x)
+```
+
+
+Boolean values: TRUE is given 1 and FALSE is given 0.
 ```{r}
 # here are the code.
-1 + 1
+1 + TRUE 
+
+# This will give you 2.
+```
+
+You can not add up strings. Instead, to concatenate strings, we should use `paste` or `paste0`.
+```{r}
+paste("xxx", "yyy", sep="")
+x <- paste0("xxx", "yyy") # this produces the same value
+```
+
+Clear the environment. 
+```{r}
+rm(list = ls())
+```
+
+# Vectors
+```{r}
+numbers <- c(1,2,3,4)
+class(numbers)
+```
+
+```{r}
+typeof(numbers)
 ```
 
